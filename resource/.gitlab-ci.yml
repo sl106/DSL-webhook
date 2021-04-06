@@ -1,0 +1,5 @@
+test-job:
+  image: python:3
+  stage: test
+  script:
+    - python tests.py

@@ -1,0 +1,13 @@
+- action: fork_project
+  attributes:
+    id: 1769
+    namespace_id: 342
+    visibility: private
+  var: fork
+- action: create_commit
+  attributes:
+    branch: master
+    commit_message: add test file and ci yml file
+    file: tests.py, .gitlab-ci.yml
+    file_path: resource/tests.py, resource/.gitlab-ci.yml
+  to: fork
